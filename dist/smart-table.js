@@ -1,7 +1,3 @@
-/** 
-* @version 2.1.8
-* @license MIT
-*/
 (function (ng, undefined){
     'use strict';
 
@@ -272,7 +268,7 @@ ng.module('smart-table')
         attr.$observe('stSearch', function (newValue, oldValue) {
           var input = element[0].value;
           if (newValue !== oldValue && input) {
-            ctrl.tableState().search = {};
+            // ctrl.tableState().search = {};
             tableCtrl.search(input, newValue);
           }
         });
